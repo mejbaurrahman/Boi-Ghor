@@ -10,7 +10,7 @@ export default function ShowCards() {
       .then((res) => {
         setBooks(res.data);
       })
-      .catch((err) => console.log(err.message));
+      .catch((err) => console.error(err.message));
   }, []);
 
   return (
